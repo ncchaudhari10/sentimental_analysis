@@ -79,7 +79,7 @@ class Scrape:
         print("There are",np,"% negative reviews\n")
         print("There are",nep,"% neutral reviews\n")
 
-
+s=Scrape()
 # database   
 from pymongo import MongoClient 
 client = MongoClient("mongodb://localhost:27017/") 
@@ -89,7 +89,7 @@ mycollection=mydatabase['review']
 rec = mydatabase.review.insert(dict(s.reviews)) 
 # print(rec)
 
-s=Scrape()
+
 s.review_()
 print(s.positive)
 s.accuracy()
