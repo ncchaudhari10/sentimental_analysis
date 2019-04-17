@@ -7,6 +7,8 @@ Required Packages :
   3) requests 
   4) textblob  (used for sentimental analysis)
   5) pymongo
+
+
 to Run :
   python program.py
   
